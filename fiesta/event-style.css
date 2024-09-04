@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  .courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body{
+    
+    min-height: 100vh;
+    background: url(/assets/bbb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Courier Prime";
+  }
+  
+  
+  nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  nav a:hover{
+    background-color: #f0f0f0;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+
+
+/* card */
+/* From Uiverse.io by gharsh11032000 */ 
+/* From Uiverse.io by alexruix */ 
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 20px;
+  background: transparent;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+ }
+ 
+ .card-details {
+  color: white;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  font: "Courier Prime";
+  background-color: aqua;
+  color: black;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+ .text-body {
+  color: rgb(134, 134, 134);
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+ }
+ 
+ /*Hover*/
+ .card:hover {
+  border-color: aqua;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ }
+
+
+ .flexu{
+  
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+.head{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+  backdrop-filter: blur(10px);
+}
+.head h1{
+  letter-spacing: 2px;
+  
+}
+
+
+
+
+
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+    .sidebar a{
+      color: white;
+    }
+    .head{
+      height: 30px;
+
+    }
+    .flexu{
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+    .sidebar a{
+      color: white;
+    }
+}
